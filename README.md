@@ -34,17 +34,17 @@ Simple drilldown menu
 </ul>
 ``` 
 ### Create a menu
-''' js
+``` js
 jQuery(element).tgadrilldown();
-
+```
 
 ### Options set
-''' js
+``` js
 
 jQuery(element).tgadrilldown();{
                         toggle: '<i class="icon-caret-right"></i>'
                     }
-
+```
 ### Settings
 
 Option | Default | Permitted
