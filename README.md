@@ -41,7 +41,7 @@ jQuery(element).tgadrilldown();
 ### Options set
 ``` js
 
-jQuery(element).tgadrilldown();{
+jQuery(element).tgadrilldown({
                         toggle: '<i class="icon-caret-right"></i>'
                     }
 ```
