@@ -1,0 +1,29 @@
+.tgadrilldown-container {
+
+    position: relative;
+    width: 100%;
+
+    .tgadrilldown-init {
+
+        position: relative;
+        top: 0;
+
+        ul {
+
+            position: relative;
+            left: 100%;
+            top:0;
+
+            &.active{
+
+                position: absolute;
+                @include flexbox();
+                @include flex-direction(column);
+
+            }
+
+        }
+
+    }
+
+}
