@@ -60,6 +60,7 @@
 
         function tgaMakeDrilldown() {
 
+            menu.attr('data-deep', 0);
             menu.wrap('<div class="tgadrilldown-container"></div>');
             menu.data('tgadrilldown', '').addClass('tgadrilldown-init');
             menu.find('ul').hide();
@@ -88,14 +89,7 @@
                 e.preventDefault();
 
                 $(e.currentTarget).siblings('ul').addClass('active').css('display', 'flex');
-
-                if(menu.data('deep')) {
-                    menu.data('deep', $(e.currentTarget).data('drilltoggle'));
-                }else{
-                    menu.attr('data-deep', $(e.currentTarget).data('drilltoggle'));
-                }
-
-
+                menu.data('deep', $(e.currentTarget).data('drilltoggle'));
 
                 tgaAnimationDrilldown();
 
