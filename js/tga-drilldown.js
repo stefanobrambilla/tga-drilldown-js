@@ -16,7 +16,7 @@
             next = [];
 
         menu.configs = {
-              toggle: '<i>></i>'
+            toggle: '<i>></i>'
         };
         menu.configs =  jQuery.extend( menu.configs, ( options || {} ) );
 
@@ -90,10 +90,12 @@
                 $(e.currentTarget).siblings('ul').addClass('active').css('display', 'flex');
 
                 if(menu.data('deep')) {
-                    menu.attr('data-deep', $(e.currentTarget).data('drilltoggle'));
-                }else{
                     menu.data('deep', $(e.currentTarget).data('drilltoggle'));
+                }else{
+                    menu.attr('data-deep', $(e.currentTarget).data('drilltoggle'));
                 }
+
+
 
                 tgaAnimationDrilldown();
 
